@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- A page with a folded corner and an arrow leaving it -->
+  <path d="M10 4 H34 L46 16 V60 H10 Z" fill="#fffdf8" stroke="#b5562f" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M34 4 V16 H46" fill="none" stroke="#b5562f" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M17 26 H36 M17 34 H32 M17 42 H34 M17 50 H28" stroke="#1f4e8c" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="46" cy="46" r="14" fill="#d9481c"/>
+  <path d="M39 46 H52 M47 40 L53 46 L47 52" fill="none" stroke="#fffdf8" stroke-width="3.5"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

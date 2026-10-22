@@ -1,0 +1,24 @@
+# Private notes, not for the public repo
+README_private.md
+description.md
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# PyInstaller (build_exe.bat)
+build/
+dist/
+*.spec
+
+# Node (tests only)
+node_modules/
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini
+.DS_Store

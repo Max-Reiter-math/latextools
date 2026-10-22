@@ -1,0 +1,105 @@
+/*
+  theme.css: every design choice of latextools lives in this file.
+  Change a value, reload the page (or restart the desktop app), done.
+  style.css only arranges things and never names a color or font itself.
+
+  The palette is taken from Sicily:
+    majolica blue    the glazed tiles of Caltagirone
+    lemon            the lemon groves of the Conca d'Oro
+    blood orange     the arance rosse below Etna
+    terracotta       roof tiles and Santo Stefano pottery
+    lava             the black basalt of Etna
+    limestone        the honey-coloured baroque of Noto
+    pistachio        the pistachios of Bronte
+    sea              the water off San Vito Lo Capo
+*/
+:root {
+  /* ---- Palette ---------------------------------------------------- */
+  --majolica-blue: #1f4e8c;
+  --majolica-blue-dark: #163a69;
+  --lemon: #f2c230;
+  --blood-orange: #d9481c;
+  --terracotta: #b5562f;
+  --terracotta-dark: #8f4024;
+  --lava: #2b2622;
+  --limestone: #f6efe2;
+  --limestone-dark: #e9dcc3;
+  --pistachio: #93a445;
+  --sea: #2a9d9a;
+  --white: #fffdf8;
+
+  /* ---- Fonts ------------------------------------------------------ */
+  --font-title: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --font-body: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: Consolas, "Cascadia Mono", "Courier New", monospace;
+
+  /* ---- Text types: size, weight (400 normal, 700 bold), style (normal/italic), color */
+  --title-size: 1.9rem;        /* "latextools" in the header */
+  --title-weight: 700;
+  --title-style: normal;
+  --title-color: var(--limestone);
+
+  --heading-size: 1.35rem;     /* app names and app page titles */
+  --heading-weight: 700;
+  --heading-style: normal;
+  --heading-color: var(--majolica-blue);
+
+  --label-size: 0.85rem;       /* small headings such as "Input", "Console" */
+  --label-weight: 700;
+  --label-style: normal;
+  --label-color: var(--terracotta);
+
+  --body-size: 1rem;
+  --body-weight: 400;
+  --body-style: normal;
+  --body-color: var(--lava);
+
+  --small-size: 0.85rem;       /* app descriptions and footer */
+  --small-weight: 400;
+  --small-style: italic;
+  --small-color: #6b5f55;
+
+  --code-size: 0.92rem;        /* text fields and console */
+
+  /* ---- Page, header, footer --------------------------------------- */
+  --page-bg: var(--limestone);
+  --header-bg: var(--majolica-blue);
+  --header-stripe: var(--lemon);     /* thin line under the header */
+  --footer-bg: var(--limestone-dark);
+  --footer-text: var(--small-color);
+
+  /* ---- App cards on the overview grid: normal / hover / click ----- */
+  --card-bg: var(--white);
+  --card-bg-hover: #fff4d1;
+  --card-bg-active: var(--lemon);
+  --card-text: var(--heading-color);
+  --card-text-hover: var(--terracotta);
+  --card-text-active: var(--lava);
+  --card-border: var(--limestone-dark);
+  --card-border-hover: var(--terracotta);
+
+  /* ---- Buttons: normal / hover / click ---------------------------- */
+  --button-bg: var(--majolica-blue);
+  --button-bg-hover: var(--blood-orange);
+  --button-bg-active: var(--terracotta-dark);
+  --button-text: var(--white);
+  --button-text-hover: var(--white);
+  --button-text-active: var(--lemon);
+
+  /* ---- Links: normal / hover / click ------------------------------ */
+  --link: var(--majolica-blue);
+  --link-hover: var(--blood-orange);
+  --link-active: var(--terracotta-dark);
+
+  /* ---- Text fields and console ------------------------------------ */
+  --input-bg: var(--white);
+  --input-text: var(--lava);
+  --input-border: var(--limestone-dark);
+  --input-border-focus: var(--sea);
+  --console-bg: var(--lava);
+  --console-text: #d7e3a8;
+
+  /* ---- Shapes ----------------------------------------------------- */
+  --radius: 6px;
+  --shadow: 0 2px 6px rgba(43, 38, 34, 0.12);
+}

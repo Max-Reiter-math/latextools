@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{amsmath}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\norm}[1]{\left\| #1 \right\|}
+\newcommand{\greet}[2][Hello]{#1, #2!}
+\DeclareMathOperator{\tr}{tr}
+\newenvironment{note}{\textbf{Note:} }{}
+\title{A \emph{small} test}
+\begin{document}
+\maketitle
+\section{Introduction}
+% a comment that disappears
+This costs 5\% and uses \textit{italics}, \textbf{bold \emph{nested}} text. \greet{world} \greet[Ciao]{Sicilia}
+Inline math $\norm{x} \in \R$ and \(a < b\).
+\input{chapter1}
+\begin{note}Be careful.\end{note}
+
+\subsection*{Lists}
+\begin{itemize}
+  \item First
+  \item Second with
+  \begin{enumerate}
+    \item inner one
+    \item inner two
+  \end{enumerate}
+\end{itemize}
+
+\begin{align}
+  \tr(A) &= \sum_i a_{ii} \label{eq:tr} \\
+  x &< y
+\end{align}
+See \eqref{eq:tr} and \cite[p.~3]{knuth} or \href{https://example.org}{a link}.
+\begin{verbatim}
+x = 100% {raw}
+\end{verbatim}
+\begin{theorem}Every \texttt{x} is fine.\end{theorem}
+\end{document}

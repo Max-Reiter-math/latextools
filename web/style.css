@@ -1,0 +1,137 @@
+/* Layout only. Colors, fonts and sizes come from theme.css. */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--page-bg);
+  font: var(--body-style) var(--body-weight) var(--body-size) var(--font-body);
+  color: var(--body-color);
+}
+
+a { color: var(--link); }
+a:hover { color: var(--link-hover); }
+a:active { color: var(--link-active); }
+
+/* Header */
+.site-header {
+  background: var(--header-bg);
+  border-bottom: 4px solid var(--header-stripe);
+  padding: 0.8rem 1.5rem;
+}
+.brand { display: inline-flex; align-items: center; gap: 0.8rem; text-decoration: none; }
+.brand img { width: 44px; height: 44px; }
+.brand h1 {
+  margin: 0;
+  font: var(--title-style) var(--title-weight) var(--title-size) var(--font-title);
+  color: var(--title-color);
+}
+
+main { flex: 1; width: 100%; max-width: 1200px; margin: 0 auto; padding: 1.5rem; }
+
+h2, .app-name {
+  font: var(--heading-style) var(--heading-weight) var(--heading-size) var(--font-title);
+  color: var(--heading-color);
+}
+h3 {
+  margin: 0 0 0.4rem;
+  font: var(--label-style) var(--label-weight) var(--label-size) var(--font-body);
+  color: var(--label-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.small, .app-description {
+  font: var(--small-style) var(--small-weight) var(--small-size) var(--font-body);
+  color: var(--small-color);
+}
+
+/* Overview grid */
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 1.2rem;
+}
+.app-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1.4rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  background: var(--card-bg);
+  border: 2px solid var(--card-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.app-card img { width: 72px; height: 72px; }
+.app-card .app-name { color: var(--card-text); }
+.app-card:hover { background: var(--card-bg-hover); border-color: var(--card-border-hover); }
+.app-card:hover .app-name { color: var(--card-text-hover); }
+.app-card:active { background: var(--card-bg-active); }
+.app-card:active .app-name { color: var(--card-text-active); }
+
+/* App page */
+.app-header { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem; }
+.app-header img { width: 40px; height: 40px; }
+.app-header h2 { margin: 0; }
+.back { margin-left: auto; }
+
+button, select {
+  font: inherit;
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+button {
+  border: none;
+  background: var(--button-bg);
+  color: var(--button-text);
+}
+button:hover { background: var(--button-bg-hover); color: var(--button-text-hover); }
+button:active { background: var(--button-bg-active); color: var(--button-text-active); }
+select { border: 1px solid var(--input-border); background: var(--input-bg); color: var(--input-text); }
+
+textarea {
+  width: 100%;
+  min-height: 18rem;
+  resize: vertical;
+  padding: 0.6rem;
+  font: var(--code-size) var(--font-mono);
+  background: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--input-border);
+  border-radius: var(--radius);
+}
+textarea:focus { outline: none; border-color: var(--input-border-focus); }
+
+.toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; }
+
+/* Export app: input and output side by side, console below */
+.export { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+.export .console-panel { grid-column: 1 / -1; }
+@media (max-width: 800px) { .export { grid-template-columns: 1fr; } }
+
+.console {
+  margin: 0;
+  min-height: 6rem;
+  max-height: 14rem;
+  overflow: auto;
+  padding: 0.6rem;
+  font: var(--code-size) var(--font-mono);
+  background: var(--console-bg);
+  color: var(--console-text);
+  border-radius: var(--radius);
+  white-space: pre-wrap;
+}
+
+/* Footer */
+.site-footer {
+  padding: 0.7rem 1.5rem;
+  text-align: center;
+  background: var(--footer-bg);
+  font: var(--small-style) var(--small-weight) var(--small-size) var(--font-body);
+  color: var(--footer-text);
+}

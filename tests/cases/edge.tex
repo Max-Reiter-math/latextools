@@ -1,0 +1,31 @@
+\def\half#1{\frac{#1}{2}}
+\newenvironment{boxed}[1]{\textbf{#1:} }{ (end)}
+\newcommand\vect[1]{\mathbf{#1}}
+Snippet without a preamble. Costs \$5 \& more, a\_b, 50\%, \{braces\}.
+Line one\\
+Line two~with non-breaking space and \verb|\raw{code}|.
+
+$$\half{x} + \vect{v}$$
+\[ a = b \]
+
+\begin{boxed}{Warning} Read this. \end{boxed}
+
+\begin{description}
+  \item[Apple] A fruit.
+  \item[Etna] A volcano
+  with two lines.
+\end{description}
+
+\begin{quote}
+To be or not to be.
+\end{quote}
+
+\begin{figure}
+  \includegraphics{img.png}
+\end{figure}
+
+\begin{equation*}
+  E = mc^2 \nonumber
+\end{equation*}
+\paragraph{Note} {\bf Old} style and \textsc{small caps} and \footnote{a note}.
+\subfile{part2}
