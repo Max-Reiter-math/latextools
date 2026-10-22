@@ -1,6 +1,6 @@
 """Small, dependency-free helpers for reading LaTeX source.
 
-Every function here has a twin in web/backend/latex.js with the same name
+Every function here has a twin in docs/backend/latex.js with the same name
 and behaviour. When you change one, change the other.
 """
 import re

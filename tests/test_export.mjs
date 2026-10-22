@@ -2,7 +2,7 @@
 // saved by tests/test_export.py, so both twins must agree.
 //     node tests/test_export.mjs
 import { readFileSync, readdirSync } from "node:fs";
-import { convert } from "../web/backend/export.js";
+import { convert } from "../docs/backend/export.js";
 
 const cases = new URL("./cases/", import.meta.url);
 const extensions = { markdown: ".md", html: ".html" };

@@ -1,6 +1,6 @@
 """Export app: convert LaTeX source to Markdown or HTML.
 
-Twin of web/backend/export.js. The steps are:
+Twin of docs/backend/export.js. The steps are:
   1. park verbatim code, drop comments, inline \\input files
   2. take out \\newcommand-style definitions and expand them everywhere
   3. convert math to the target format and park it

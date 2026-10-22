@@ -29,15 +29,15 @@ Requires [conda](https://docs.conda.io/).
 conda env create -f environment.yml
 conda activate latextools
 python -m latextools.desktop          # desktop app
-python -m http.server 8765 -d web     # web app at http://localhost:8765
+python -m http.server 8765 -d docs    # web app at http://localhost:8765
 build_exe.bat                         # builds dist\latextools.exe
 ```
 
 ## How it is built
 
 The backend is written in Python (`latextools/`). Every Python module has a
-JavaScript twin with the same functions (`web/backend/`), so the web app can
-work without Python. Both versions share one HTML/CSS frontend (`web/`); the
+JavaScript twin with the same functions (`docs/backend/`), so the web app can
+work without Python. Both versions share one HTML/CSS frontend (`docs/`); the
 desktop app shows it in a native window using [pywebview](https://pywebview.flowrl.com/).
 
 The tests run the same example files through Python and JavaScript and check

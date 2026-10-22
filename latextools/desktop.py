@@ -1,4 +1,4 @@
-"""Desktop front end: shows the web/ folder in a native window and lets
+"""Desktop front end: shows the docs/ folder in a native window and lets
 its JavaScript call the Python backend through the Api class below.
 
 Run with:  python -m latextools.desktop
@@ -12,7 +12,7 @@ from latextools.apps import export
 
 # Inside the .exe built by PyInstaller the files live in sys._MEIPASS.
 ROOT = pathlib.Path(getattr(sys, "_MEIPASS", pathlib.Path(__file__).parent.parent))
-WEB = ROOT / "web"
+WEB = ROOT / "docs"
 
 
 class Api:

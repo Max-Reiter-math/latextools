@@ -1,6 +1,6 @@
 """Find user-defined macros and environments and expand them in place.
 
-Twin of web/backend/macros.js.
+Twin of docs/backend/macros.js.
 """
 import re
 
